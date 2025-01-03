@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello from Bharat</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d6d708df20.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Photos/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Bharat</span><br>Welcome to everything me!</h1>
+            </div>
+        </div>
+    </div>
+<!------------------About---------------------------->   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Photos/main_pic.jpg" class="main-pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-me">Hey, and welcome to a website about me. I am a Software Engineer at Meta, and previously at Bungie.
+                    I am currently working on the Ads Training Data Platform team, building the magic that empowers Ad delivery
+                    at scale. In my free time, I like exploring the outdoors, reading, gaming, and learning new technologies
+                    (with this website being one of them lol). Please feel free to reach out if you want to know more about me
+                    or talk about opportunities!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Engineering</span><br>Handling data at scale for model training and exploration</li>
+                            <li><span>Privacy Compliance</span><br>Ensuring data consumption in line with external commitments</li>
+                            <li><span>Site Reliability</span><br>Building and improving reliability of core systems and services</li>
+                            <li><span>System Design</span><br>Designing highly available, scalable, and efficient services</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Software Engineer on Training Data Platform at Meta</li>
+                            <li><span>2022</span><br>Site Reliability Engineer on Destiny 2 at Bungie</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>B.A. in Computer Science and in Entrepeneurship from Purdue University</li>
+                            <li><span>2019</span><br>High School from Singapore American School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------Services------------------------->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Computer Science Tutoring</h2>
+                    <p>Currently offering tutoring services for most areas in Computer Science to students of all ages (online and in person).
+                    Please reach out to me using the contact form if interested!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Consulting/Design</h2>
+                    <p>I am happy to offer consulting related to anything in my experience domains, so if you need a second (or first!) opinion
+                    please reach out via the contact form!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <h2>Sharing my Story</h2>
+                    <p>If you would like to know more about my experiences and journey to where I am today, please contact me via the form. I am
+                    eager to share and help the engineers of tomorrow achieve their goals!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------Portfolio-------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+</body>
+</html>
