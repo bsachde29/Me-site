@@ -239,3 +239,13 @@ nav ul a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
+
+.sub-title{
+    color: #b54769;
+    margin-bottom: 30px;
+}
+
+.work div h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
