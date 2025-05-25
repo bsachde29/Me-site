@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
 
@@ -248,4 +248,8 @@ nav ul a:hover::after{
 .work div h2{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
