@@ -1,18 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: #080808;
+    background: #606c38;
     color: #fff
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("Photos/background_pic.jpg");
+    background-image: url("photos/background_pic.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -38,12 +42,12 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #ffffff;
+    color: #bc6c25;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     position: relative;
-    background-color: black;
+    background-color: #fefae0;
     border-radius: 10px;
     display: inline-block;
     padding: 2px 8px;
@@ -81,7 +85,7 @@ nav ul a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color:#fefae0;
     text-shadow:
     -2px -2px 0 black, /* Top-left */
     2px -2px 0 black,  /* Top-right */
@@ -103,7 +107,7 @@ nav ul a:hover::after{
 
 #about {
     padding: 80px 0;
-    color: #ababab;
+    color: #fefae0;
 }
 
 .row{
@@ -128,7 +132,7 @@ nav ul a:hover::after{
 .subtitle{
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: #283618;
 }
 
 .about-me{
@@ -155,7 +159,7 @@ nav ul a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #dda15e;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -172,7 +176,7 @@ nav ul a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
+    color: #dda15e;
     font-size: 14px;
 }
 
@@ -184,10 +188,55 @@ nav ul a:hover::after{
     display: block;
 }
 
+/* -------- Experiences -------- */
+#mywork {
+  padding: 5px 0;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.experience-tile {
+  background: #fefae0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.experience-tile:hover {
+  transform: translateY(-10px);
+  background: #dda15e;
+}
+
+.experience-tile img {
+  width: auto;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.experience-tile h3 {
+  font-size: 1;
+  color: #bc6c25;
+  margin-bottom: 1rem;
+}
+
+.experience-tile ul {
+    list-style: circle;
+    margin-left: 10px;
+    color: #bc6c25;
+    font-weight: 300;
+}
+
 /* ------------- Services --------- */
 
 #services{
-    padding: 30px 0;
+    padding: 100px 0;
 }
 
 .services-list{
@@ -198,7 +247,7 @@ nav ul a:hover::after{
 }
 
 .services-list div{
-    background: #262626;
+    background: #fefae0;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -209,47 +258,72 @@ nav ul a:hover::after{
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+    color: #bc6c25;
 }
 
-.services-list div h2{
+.tile-header{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: #bc6c25;
 }
 
-.services-list div a{
-    text-decoration: none;
-    color: white;
+.tile-link{
+    color: #bc6c25;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+    text-decoration: underline;
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: #dda15e;
     transform: translateY(-10px);
 }
 
-.services-list div p{
+.tile-text {
     font-size: 15px;
+    color: #bc6c25;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
-/* -------- Portfolio ------- */
-
-#portfolio{
-    padding: 50px 0;
+/* Info */
+#info {
+    padding: 10px 0;
 }
 
-.sub-title{
-    color: #b54769;
-    margin-bottom: 30px;
+/* Fun stuff */
+
+.fun-stuff {
+  padding: 80px 10%;
 }
 
-.work div h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.grid-tile {
+  margin-top: 40px;
+  background: #fefae0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease;
 }
 
-html {
-    scroll-behavior: smooth;
+.responsive-video {
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
